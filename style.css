@@ -1,0 +1,14 @@
+/**
+ * Default to a more natural box model while still allowing for overrides.
+ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #ECF0F1;
+    color: #2C3E4F;
+}
