@@ -94,6 +94,10 @@ header .logo {
     border-bottom: 1px solid #666666;
 }
 
+.postSnippet:first-child::before {
+    content: none;
+}
+
 .postFeed .postType {
     font-weight: bold;
 }
