@@ -43,6 +43,19 @@ body {
     flex: 1 1 auto;
 }
 
+header {
+    margin: 36px;
+    height: 100px;
+}
+
+header .logo {
+    height: 100%;
+}
+
+.about .blurb {
+    text-align: center;
+}
+
 .postFeed {
     width: 500px;
     flex: 0 0 auto;
@@ -58,18 +71,6 @@ body {
 .postFeed h1 {
     text-align: center;
     text-transform: uppercase;
-}
-
-.postFeed .postSnippet {
-    /* TODO */
-}
-
-header {
-    height: 100px;
-}
-
-header .logo {
-    height: 100%;
 }
 
 .postSnippet.podcast .postType, .postSnippet.podcast .postAction {
