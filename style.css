@@ -73,6 +73,19 @@ header .logo {
     text-transform: uppercase;
 }
 
+.postFeed .postType {
+    font-weight: bold;
+}
+
+.postFeed .postTag::before {
+    content: '#';
+}
+
+.postFeed .postTag {
+    font-style: italic;
+    color: #666;
+}
+
 .postTitle {
     margin: 0;
 }
