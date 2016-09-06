@@ -25,3 +25,11 @@ header {
 header .logo {
     height: 100%;
 }
+
+.postSnippet.podcast .postType, .postSnippet.podcast .postAction {
+    color: #F5A623;
+}
+
+.postSnippet.video .postType, .postSnippet.video .postAction {
+    color: #BD10E0;
+}
