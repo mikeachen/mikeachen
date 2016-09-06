@@ -54,26 +54,24 @@ body {
     z-index: -1;
 }
 
-.about .blurb {
+.about .title {
     position: absolute;
     bottom: 300px;
+    text-align: center;
+    width: 100%;
 }
 
-.about .blurb h1, .about .blurb h2 {
+.about .title h1, .about .title h2 {
     margin: 0;
     font-weight: 100;
 }
 
-.about .blurb h1 {
+.about .title h1 {
     font-size: 48px;
 }
 
-.about .blurb h2 {
+.about .title h2 {
     font-size: 24px;
-}
-
-.about .blurb p {
-    font-family: 'Merriweather', serif;
 }
 
 header {
@@ -83,10 +81,6 @@ header {
 
 header .logo {
     height: 100%;
-}
-
-.about .blurb {
-    text-align: center;
 }
 
 .postFeed {
