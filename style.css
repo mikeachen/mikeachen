@@ -73,6 +73,15 @@ header .logo {
     text-transform: uppercase;
 }
 
+.postTitle {
+    margin: 0;
+}
+
+.postTitle a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .postAction a {
     display: block;
     width: 100px;
