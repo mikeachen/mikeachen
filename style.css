@@ -73,10 +73,29 @@ header .logo {
     text-transform: uppercase;
 }
 
-.postSnippet.podcast .postType, .postSnippet.podcast .postAction {
-    color: #F5A623;
+.postAction a {
+    display: block;
+    width: 100px;
+    padding: 5px;
+    border-radius: 100px;
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.postSnippet.video .postType, .postSnippet.video .postAction {
+.postSnippet.podcast .postType {
+    color: #F5A623;
+}
+.postSnippet.podcast .postAction a {
+    background-color: #F5A623;
+}
+
+.postSnippet.video .postType {
     color: #BD10E0;
+}
+
+.postSnippet.video .postAction a {
+    background-color: #BD10E0;
 }
