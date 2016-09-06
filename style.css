@@ -25,9 +25,7 @@ body {
 }
 
 body {
-    /**
-     * TODO(mike): Body text styles.
-     */
+    font-family: 'Lato', sans-serif;
 }
 
 a:link, a:visited {
@@ -41,6 +39,10 @@ body {
 
 .about {
     flex: 1 1 auto;
+}
+
+.about .blurb {
+    font-family: 'Merriweather', serif;
 }
 
 header {
@@ -71,6 +73,23 @@ header .logo {
 .postFeed h1 {
     text-align: center;
     text-transform: uppercase;
+
+    font-size: 18px;
+}
+
+.postSnippet {
+    position: relative;
+    padding: 20px 0;
+}
+
+.postSnippet::before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid #666666;
 }
 
 .postFeed .postType {
@@ -84,10 +103,13 @@ header .logo {
 .postFeed .postTag {
     font-style: italic;
     color: #666;
+    font-size: 14px;
+
 }
 
 .postTitle {
     margin: 0;
+    font-size: 24px;
 }
 
 .postTitle a {
@@ -95,9 +117,14 @@ header .logo {
     color: inherit;
 }
 
+.postSnippet p {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+}
+
 .postAction a {
     display: block;
-    width: 100px;
+    width: 100%;
     padding: 5px;
     border-radius: 100px;
 
