@@ -105,8 +105,10 @@ header .logo {
     background-color: #FAFAFA;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.postFeedWrapper {
+    margin: auto 0;
 }
 
 .postFeed h1 {
@@ -131,10 +133,6 @@ header .logo {
 
 .blurb p {
     margin-top: 20px;
-}
-
-.posts {
-    min-height: 0;
 }
 
 .postSnippet {
