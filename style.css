@@ -8,12 +8,229 @@ html {
   box-sizing: inherit;
 }
 
+/**
+ * Remove page padding.
+ */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 body {
-    background-color: #ECF0F1;
-    color: #2C3E4F;
-    font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
 }
 
 a:link, a:visited {
     color: #2980B9;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    flex: 1 1 auto;
+    color: #FAFAFA;
+    position: relative;
+}
+
+.aboutBackground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("/photo.jpg") #CCC;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 100%;
+    background-position: center top;
+    z-index: -1;
+}
+
+.aboutBackground::after {
+    content: "";
+    background: linear-gradient(-180deg, #3023AE 0%, #53A0FD 100%);
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.about .title {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 25%;
+}
+
+.about .title h1, .about .title h2 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.about .title h1 {
+    font-size: 48px;
+}
+
+.about .title h2 {
+    font-size: 24px;
+}
+
+header {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    height: 100px;
+}
+
+header .logo {
+    height: 100%;
+}
+
+.postFeed {
+    flex: 0 0 auto;
+    height: 100%;
+    overflow-y: scroll;
+
+    padding: 36px;
+    background-color: #FAFAFA;
+
+    display: flex;
+}
+
+.postFeedWrapper {
+    margin: auto auto;
+    width: 375px;
+}
+
+.postFeed h1 {
+    margin: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.postFeed p {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+}
+
+.blurb {
+    flex: 0 0 auto;
+    margin-bottom: 20px;
+}
+
+.blurb p:first-of-type {
+    margin-top: 20px;
+}
+
+.postSnippet {
+    position: relative;
+    padding: 20px 0;
+}
+
+.postSnippet::before {
+    content: "";
+    position: absolute;
+    left: 25%;
+    top: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid #666666;
+}
+
+.postSnippet:first-child::before {
+    content: none;
+}
+
+.postFeed .postType {
+    font-weight: bold;
+}
+
+.postFeed .postTag::before {
+    content: '#';
+}
+
+.postFeed .postTag {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+}
+
+.postTitle {
+    margin: 0;
+    font-size: 24px;
+}
+
+.postTitle a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.postSnippet p {
+    margin-top: 0.5em;
+}
+
+.postAction a {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-radius: 100px;
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.postSnippet.podcast .postType {
+    color: #F5A623;
+}
+.postSnippet.podcast .postAction a {
+    background-color: #F5A623;
+}
+
+.postSnippet.video .postType {
+    color: #BD10E0;
+}
+
+.postSnippet.video .postAction a {
+    background-color: #BD10E0;
+}
+
+@media (max-width: 650px) {
+    body {
+        flex-direction: column;
+    }
+
+    .about {
+        height: 400px;
+        flex: 0 0 auto;
+    }
+
+    header {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        height: 50px;
+    }
+
+    .postFeed {
+        overflow-y: initial;
+        padding: 18px;
+    }
 }

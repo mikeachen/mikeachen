@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Mike Chen</title>
-        <link href="http://fonts.googleapis.com/css?family=Inconsolata"
-              rel="stylesheet"
-              type="text/css">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700|Merriweather:400,400i,700" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-82323118-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script>
+            /**
+             * Function that tracks a click on an outbound link in Analytics.
+             * This function takes a valid URL string as an argument, and uses that URL string
+             * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+             * using 'navigator.sendBeacon' in browser that support it.
+             */
+            var trackOutboundLink = function(url, linkName) {
+                ga('send', 'event', 'outbound', 'click', url + ': ' + linkName, {
+                    'transport': 'beacon',
+                    'hitCallback': function(){window.open(url)}
+                });
+            }
+        </script>
     </head>
     <body>
-        <h1>Mike Chen, JavaScript Engineer</h1>
-        <section>
-            <h2>Learning</h2>
-            <ul>
-                <li>Cooking</li>
-                <li>Exercise</li>
-                <li>Unity</li>
-            </ul>
+        <section class="about">
+            <div class="aboutBackground"></div>
+            <header>
+                <img class="logo" src="logo.svg">
+            </header>
+            <div class="title">
+                <h1>Mike Chen</h1>
+                <h2>software and stuff</h2>
+            </div>
         </section>
-        <section>
-            <h2>Previously</h2>
-            <ul>
-                <li>Inkling</li>
-                <li>Rockmelt</li>
-                <li>Harvard</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Listening</h2>
-            <ul>
-                <li>
-                    <a href="mailto:hey@mikechen.is" title="Email">
-                        hey@mikechen.is
-                    </a>
-                </li>
-            </ul>
+        <section class="postFeed">
+            <div class="postFeedWrapper">
+                <div class="blurb">
+                    <h1>About Me</h1>
+                    <p>Since October 2015, I've been taking time off to build a life as an independent adult. So far, this has included learning to cook, getting fit, making friends outside of professional contexts, exploring San Francisco, and more! I've also been running <i>Game of the Fortnight</i>, a game discussion group among the indie game developers at <a href="http://thegamenest.com/" target="_blank" onclick="trackOutboundLink('http://thegamenest.com/', 'Text'); return false;">Gamenest</a>.</p>
+                    <p>Previously, was a JavaScript Engineer building a web-based rich text editing environment at <a href="https://www.inkling.com/" target="_blank" onclick="trackOutboundLink('https://www.inkling.com/', 'Text'); return false;">Inkling</a>.
+                    <p><a href="https://twitter.com/mikecheb" target="_blank" onclick="trackOutboundLink('https://twitter.com/mikecheb', 'Text'); return false;">Find me on Twitter</a> or <a href="mailto:hey@mikechen.is" target="_blank" onclick="trackOutboundLink('mailto:hey@mikechen.is', 'Text'); return false;">shoot me an email</a>.</p>
+                </div>
+                <h1>Featured Posts</h1>
+                <div class="posts">
+                    <div class="postSnippet podcast">
+                        <div class="postMeta">
+                            <span class="postType">Radio Essay</span>
+                            <span class="inlineLogo">🀗</span>
+                            <span class="postTagList">
+                                <span class="postTag">Music</span>
+                                <span class="postTag">Review</span>
+                            </span>
+                        </div>
+                        <h3 class="postTitle">
+                            <a href="https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up" target="_blank" onclick="trackOutboundLink('https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up', 'Title'); return false;">Colleen Green: <i>I Want to Grow Up</i></a>
+                        </h3>
+                        <p>Growing up isn't about changing the way you act. It's about learning to love and accept yourself, and embracing the paradox that you can be happy with yourself and still be going places. I wrote and recorded a radio essay about how Colleen Green's 2015 LP helped me realize that. Check it out if you've ever wondered when life is going to feel the way it's supposed to!</p>
+                        <div class="postAction">
+                            <a href="https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up" target="_blank" onclick="trackOutboundLink('https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up', 'Button'); return false;">Listen</a>
+                        </div>
+                    </div>
+                    <div class="postSnippet video">
+                        <div class="postMeta">
+                            <span class="postType">Video</span>
+                            <span class="inlineLogo">🀗</span>
+                            <span class="postTagList">
+                                <span class="postTag">Games</span>
+                                <span class="postTag">Livestream</span>
+                            </span>
+                        </div>
+                        <h3 class="postTitle">
+                            <a href="https://www.youtube.com/watch?v=_R_B-Ts51i0" target="_blank" onclick="trackOutboundLink('https://www.youtube.com/watch?v=_R_B-Ts51i0', 'Title'); return false;"><i>Firewatch</i>: Full Playthrough</a>
+                        </h3>
+                        <p>I'd been meaning to try streaming for a while, and the release of <a href="http://firewatchgame.com/" target="_blank" onclick="trackOutboundLink('http://firewatchgame.com/', 'Text'); return false;"><i>Firewatch</i></a>, one of my most anticipated games of the year, was the perfect chance to try it out! While it didn't go totally smoothly, it was interesting and I learned a lot from it!</p>
+                        <div class="postAction">
+                            <a href="https://www.youtube.com/watch?v=_R_B-Ts51i0" target="_blank" onclick="trackOutboundLink('https://www.youtube.com/watch?v=_R_B-Ts51i0', 'Button'); return false;">Watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
 </html>
