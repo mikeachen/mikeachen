@@ -23,10 +23,7 @@
              * using 'navigator.sendBeacon' in browser that support it.
              */
             var trackOutboundLink = function(url, linkName) {
-                ga('send', 'event', 'outbound', 'click', url + ': ' + linkName, {
-                    'transport': 'beacon',
-                    'hitCallback': function(){window.open(url)}
-                });
+                ga('send', 'event', 'outbound', 'click', url + ': ' + linkName, {});
             }
         </script>
     </head>
@@ -45,9 +42,9 @@
             <div class="postFeedWrapper">
                 <div class="blurb">
                     <h1>About Me</h1>
-                    <p>Since October 2015, I've been taking time off to build a life as an independent adult. So far, this has included learning to cook, getting fit, making friends outside of professional contexts, exploring San Francisco, and more! I've also been running <i>Game of the Fortnight</i>, a game discussion group among the indie game developers at <a href="http://thegamenest.com/" target="_blank" onclick="trackOutboundLink('http://thegamenest.com/', 'Text'); return false;">Gamenest</a>.</p>
-                    <p>Previously, was a JavaScript Engineer building a web-based rich text editing environment at <a href="https://www.inkling.com/" target="_blank" onclick="trackOutboundLink('https://www.inkling.com/', 'Text'); return false;">Inkling</a>.
-                    <p><a href="https://twitter.com/mikecheb" target="_blank" onclick="trackOutboundLink('https://twitter.com/mikecheb', 'Text'); return false;">Find me on Twitter</a> or <a href="mailto:hey@mikechen.is" target="_blank" onclick="trackOutboundLink('mailto:hey@mikechen.is', 'Text'); return false;">shoot me an email</a>.</p>
+                    <p>Since October 2015, I've been taking time off to build a life as an independent adult. So far, this has included learning to cook, getting fit, making friends outside of professional contexts, exploring San Francisco, and more! I've also been running <i>Game of the Fortnight</i>, a game discussion group among the indie game developers at <a href="http://thegamenest.com/" target="_blank" onclick="trackOutboundLink('http://thegamenest.com/', 'Text')">Gamenest</a>.</p>
+                    <p>Previously, was a JavaScript Engineer building a web-based rich text editing environment at <a href="https://www.inkling.com/" target="_blank" onclick="trackOutboundLink('https://www.inkling.com/', 'Text')">Inkling</a>.
+                    <p><a href="https://twitter.com/mikecheb" target="_blank" onclick="trackOutboundLink('https://twitter.com/mikecheb', 'Text')">Find me on Twitter</a> or <a href="mailto:hey@mikechen.is" target="_blank" onclick="trackOutboundLink('mailto:hey@mikechen.is', 'Text')">shoot me an email</a>.</p>
                 </div>
                 <h1>Featured Posts</h1>
                 <div class="posts">
@@ -61,11 +58,11 @@
                             </span>
                         </div>
                         <h3 class="postTitle">
-                            <a href="https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up" target="_blank" onclick="trackOutboundLink('https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up', 'Title'); return false;">Colleen Green: <i>I Want to Grow Up</i></a>
+                            <a href="https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up" target="_blank" onclick="trackOutboundLink('https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up', 'Title')">Colleen Green: <i>I Want to Grow Up</i></a>
                         </h3>
                         <p>Growing up isn't about changing the way you act. It's about learning to love and accept yourself, and embracing the paradox that you can be happy with yourself and still be going places. I wrote and recorded a radio essay about how Colleen Green's 2015 LP helped me realize that. Check it out if you've ever wondered when life is going to feel the way it's supposed to!</p>
                         <div class="postAction">
-                            <a href="https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up" target="_blank" onclick="trackOutboundLink('https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up', 'Button'); return false;">Listen</a>
+                            <a href="https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up" target="_blank" onclick="trackOutboundLink('https://soundcloud.com/radiosgtm/colleen-greens-i-want-to-grow-up', 'Button')">Listen</a>
                         </div>
                     </div>
                     <div class="postSnippet video">
@@ -78,11 +75,11 @@
                             </span>
                         </div>
                         <h3 class="postTitle">
-                            <a href="https://www.youtube.com/watch?v=_R_B-Ts51i0" target="_blank" onclick="trackOutboundLink('https://www.youtube.com/watch?v=_R_B-Ts51i0', 'Title'); return false;"><i>Firewatch</i>: Full Playthrough</a>
+                            <a href="https://www.youtube.com/watch?v=_R_B-Ts51i0" target="_blank" onclick="trackOutboundLink('https://www.youtube.com/watch?v=_R_B-Ts51i0', 'Title')"><i>Firewatch</i>: Full Playthrough</a>
                         </h3>
-                        <p>I'd been meaning to try streaming for a while, and the release of <a href="http://firewatchgame.com/" target="_blank" onclick="trackOutboundLink('http://firewatchgame.com/', 'Text'); return false;"><i>Firewatch</i></a>, one of my most anticipated games of the year, was the perfect chance to try it out! While it didn't go totally smoothly, it was interesting and I learned a lot from it!</p>
+                        <p>I'd been meaning to try streaming for a while, and the release of <a href="http://firewatchgame.com/" target="_blank" onclick="trackOutboundLink('http://firewatchgame.com/', 'Text')"><i>Firewatch</i></a>, one of my most anticipated games of the year, was the perfect chance to try it out! While it didn't go totally smoothly, it was interesting and I learned a lot from it!</p>
                         <div class="postAction">
-                            <a href="https://www.youtube.com/watch?v=_R_B-Ts51i0" target="_blank" onclick="trackOutboundLink('https://www.youtube.com/watch?v=_R_B-Ts51i0', 'Button'); return false;">Watch</a>
+                            <a href="https://www.youtube.com/watch?v=_R_B-Ts51i0" target="_blank" onclick="trackOutboundLink('https://www.youtube.com/watch?v=_R_B-Ts51i0', 'Button')">Watch</a>
                         </div>
                     </div>
                 </div>
