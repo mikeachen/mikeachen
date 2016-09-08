@@ -105,6 +105,11 @@ header .logo {
     font-size: 18px;
 }
 
+.postFeed p {
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+}
+
 .postSnippet {
     position: relative;
     padding: 20px 0;
@@ -146,11 +151,6 @@ header .logo {
 .postTitle a {
     text-decoration: none;
     color: inherit;
-}
-
-.postSnippet p {
-    font-size: 14px;
-    font-family: 'Merriweather', serif;
 }
 
 .postAction a {
