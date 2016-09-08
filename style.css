@@ -125,11 +125,16 @@ header .logo {
 }
 
 .blurb {
+    flex: 0 0 auto;
     margin-bottom: 20px;
 }
 
 .blurb p {
     margin-top: 20px;
+}
+
+.posts {
+    min-height: 0;
 }
 
 .postSnippet {
