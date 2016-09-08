@@ -70,6 +70,7 @@ body {
     bottom: 300px;
     text-align: center;
     width: 100%;
+    padding: 0 10px;
 }
 
 .about .title h1, .about .title h2 {
@@ -121,6 +122,14 @@ header .logo {
     font-family: 'Merriweather', serif;
 }
 
+.blurb {
+    margin-bottom: 20px;
+}
+
+.blurb p {
+    margin-top: 20px;
+}
+
 .postSnippet {
     position: relative;
     padding: 20px 0;
@@ -162,6 +171,10 @@ header .logo {
 .postTitle a {
     text-decoration: none;
     color: inherit;
+}
+
+.postSnippet p {
+    margin-top: 0.5em;
 }
 
 .postAction a {
