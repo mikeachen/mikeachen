@@ -110,7 +110,7 @@ header .logo {
 
 .postFeedWrapper {
     margin: auto auto;
-    width: 350px;
+    width: 375px;
 }
 
 .postFeed h1 {
@@ -133,7 +133,7 @@ header .logo {
     margin-bottom: 20px;
 }
 
-.blurb p {
+.blurb p:first-of-type {
     margin-top: 20px;
 }
 
