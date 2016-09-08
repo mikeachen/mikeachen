@@ -98,6 +98,8 @@ header .logo {
 .postFeed {
     width: 500px;
     flex: 0 0 auto;
+    height: 100%;
+    overflow-y: scroll;
 
     padding: 36px;
     background-color: #FAFAFA;
