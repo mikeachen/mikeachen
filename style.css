@@ -212,7 +212,7 @@ header .logo {
     background-color: #BD10E0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     body {
         flex-direction: column;
     }
