@@ -26,6 +26,7 @@ body {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #FAFAFA;
 }
 
 a:link, a:visited {
@@ -232,5 +233,6 @@ header .logo {
     .postFeed {
         overflow-y: initial;
         padding: 18px;
+        height: initial;
     }
 }
