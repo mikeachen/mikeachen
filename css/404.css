@@ -25,11 +25,8 @@ body {
 }
 
 body {
-    /* TODO Add fonts. */
     font-family: 'Lato', sans-serif;
 
-    /* TODO Finalize colors. */
-    background-color: #222222;
     color: white;
 
     display: flex;
@@ -40,7 +37,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: url("/img/temp.gif") #4989C1; /* TODO Temp color */
+    background: url("/img/404bg.gif") #90C8FE;
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: center;
@@ -49,7 +46,7 @@ body {
 
 .background::after {
     content: "";
-    background: #4A90E2;
+    background: #288BFF;
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -68,11 +65,14 @@ body {
 
 .tiles {
     background-image: url("/img/tile404.svg");
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     max-height: 275px;
     opacity: 0.6;
     flex-grow: 2;
+
+    /* Pad the background image for small widths. */
+    border: 10px solid transparent;
 }
 
 .content h1 {
