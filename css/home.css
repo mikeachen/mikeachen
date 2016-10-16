@@ -120,27 +120,32 @@ header .logo {
     text-align: center;
     text-transform: uppercase;
 
-    font-weight: 300;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .postFeed p {
-    font-size: 14px;
-    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
 }
 
 .blurb {
     flex: 0 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .blurb p:first-of-type {
-    margin-top: 20px;
+    margin-top: 4px;
 }
 
 .postSnippet {
     position: relative;
     padding: 20px 0;
+}
+
+.postSnippet:first-of-type {
+    padding-top: 4px;
 }
 
 .postSnippet::before {
