@@ -116,7 +116,8 @@ header .logo {
 }
 
 .postFeed h1 {
-    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 8px;
 
     text-align: center;
     text-transform: uppercase;
@@ -194,8 +195,8 @@ header .logo {
 .postAction a {
     display: block;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 7px;
+    margin: 5px 0;
+    padding: 10px 0;
     border-radius: 100px;
 
     text-decoration: none;
@@ -204,22 +205,34 @@ header .logo {
     text-align: center;
 }
 
-.postSnippet.podcast .postType {
-    color: #F5A623;
-}
-.postSnippet.podcast .postAction a {
-    background-color: #F5A623;
+.post-action__content {
+    position: relative;
 }
 
-.postSnippet.video .postType {
-    color: #BD10E0;
+.postAction.email a {
+    background-color: #4A90E2;
 }
 
-.postSnippet.video .postAction a {
-    background-color: #BD10E0;
+.postAction.twitch a {
+    background-color: #9146FF;
 }
 
-@media (max-width: 700px) {
+.post-action__icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+
+.post-action__icon--twitch {
+    left: -26px;
+    top: 1px;
+}
+
+.post-action__icon--email {
+    left: -28px;
+}
+
+@media (max-width: 775px) {
     body {
         flex-direction: column;
     }
